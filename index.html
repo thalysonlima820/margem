@@ -236,9 +236,17 @@ function calcular(){
 var margem = document.querySelector(".margem").value;
 var custo = document.querySelector(".custo").value;
 
-margem = margem/100;
+var calc = (margem/100) * custo;
 
-var resposta = custo / margem;
+console.log(typeof(calc))
+
+
+
+var custo = Number(custo)
+console.log(typeof(custo))
+
+
+var resposta = custo + calc;
 
 console.log(resposta);
 
